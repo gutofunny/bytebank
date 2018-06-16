@@ -16,7 +16,7 @@ public class Gerente extends Funcionario { //Gerente é um funcionário
 			return false;
 		}
 	}
-//	public double getBonificacao() {
-//		return this.salario*2;
-//	}
+	public double getBonificacao() {
+		return super.getBonificacao() + super.getSalario();
+	}
 }
