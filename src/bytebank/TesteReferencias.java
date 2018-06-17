@@ -11,7 +11,7 @@ public class TesteReferencias {
 		System.out.println(nome);
 		System.out.println(g1.getSalario());
 		
-		Funcionario f = new Funcionario();
+		Funcionario f = new Gerente();
 		f.setSalario(2500.0);
 		ControleBonificacao controle = new ControleBonificacao();
 		controle.registra(g1);
