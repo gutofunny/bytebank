@@ -1,17 +1,16 @@
 package bytebank;
 
-public class Gerente extends Funcionario implements Autenticavel { //Gerente é um funcionário autenticável e assina contrato autenticavel
+public class Administrador extends Funcionario implements Autenticavel {
 	private int senha;
-	/*Demais métodos*/
+	@Override
 	public double getBonificacao() {
-		System.out.println("Chamando o método de bonificacao do GERENTE");
-		return super.getSalario();
+		return 50;
 	}
 
 	@Override
 	public void setSenha(int senha) {
 		this.senha = senha;
-
+		
 	}
 
 	@Override
@@ -22,4 +21,5 @@ public class Gerente extends Funcionario implements Autenticavel { //Gerente é 
 			return false;
 		}
 	}
+
 }
